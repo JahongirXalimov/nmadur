@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if phone %}
+    {% for item in phone %}
+        <h1>{{ item.nomi }}</h1>
+        <p>{{ item.rangi }}</p>
+        <p>{{ item.narxi }}</p>
+    {% endfor %}
+{% endif %}
+</body>
+</html>
